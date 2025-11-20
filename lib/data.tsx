@@ -65,36 +65,11 @@ export const projectsData: Project[] = [
 
 export const experiencesData: Experience[] = [
   {
-    title: "Software Engineer",
-    company: "CloudTech Ventures, remote",
-    description:
-      "Currently developing scalable cloud-based applications and microservices. Responsible for architecting solutions, code reviews, and mentoring junior developers in best practices.",
-    period: "2023 Jul - present",
+    title: "",
+    company: "",
+    description: "",
+    period: "",
     technologies: ["React", "TypeScript", "AWS", "GraphQL", "Kubernetes"],
-  },
-  {
-    title: "Backend Developer Intern",
-    company: "DataFlow Systems, remote",
-    description:
-      "Assisted in developing RESTful APIs and database optimization. Gained experience in agile development methodologies and collaborated with senior developers on complex projects.",
-    period: "2023 Jan - 2023 Jul",
-    technologies: ["Java", "Spring Boot", "MySQL", "Redis"],
-  },
-  {
-    title: "Full Stack Developer",
-    company: "Digital Innovations, remote",
-    description:
-      "Built responsive web applications from concept to deployment. Worked with clients to understand requirements and delivered custom solutions that exceeded expectations.",
-    period: "2022 Jul - 2022 Dec",
-    technologies: ["Vue.js", "Python", "PostgreSQL", "Docker"],
-  },
-  {
-    title: "Junior Software Engineer",
-    company: "TechCorp Solutions, San Francisco CA",
-    description:
-      "Developed and maintained web applications using modern JavaScript frameworks. Collaborated with cross-functional teams to deliver high-quality software solutions.",
-    period: "2022 Jan - 2022 Jul",
-    technologies: ["React", "Node.js", "MongoDB", "Express"],
   },
 ];
 
