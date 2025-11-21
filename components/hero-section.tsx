@@ -9,7 +9,10 @@ import { Icons } from "./icons";
 
 const HeroSection = () => {
   return (
-    <section className="relative my-10 mb-60 flex scroll-mt-96 flex-col items-center gap-5 text-center sm:mt-28">
+    <section
+      id="home"
+      className="relative my-10 mb-60 flex scroll-mt-96 flex-col items-center gap-5 text-center sm:mt-28"
+    >
       <GridPattern
         width={80}
         height={120}
