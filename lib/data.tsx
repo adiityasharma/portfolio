@@ -65,10 +65,19 @@ export const projectsData: Project[] = [
 
 export const experiencesData: Experience[] = [
   {
-    title: "",
-    company: "",
-    description: "",
-    period: "",
+    title: "softwate engineer",
+    company: "google",
+    description:
+      "Lorem ipsum dolor sit amet consectetur adipisicing elit. Non, aut?",
+    period: "24 jun",
+    technologies: ["React", "TypeScript", "AWS", "GraphQL", "Kubernetes"],
+  },
+  {
+    title: "ui ux dev",
+    company: "google",
+    description:
+      "Lorem ipsum dolor sit amet consectetur adipisicing elit. Non, aut?",
+    period: "24 jun",
     technologies: ["React", "TypeScript", "AWS", "GraphQL", "Kubernetes"],
   },
 ];

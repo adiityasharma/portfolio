@@ -15,7 +15,7 @@ export default function Home() {
       <AboutSection />
       <Divider />
       <ExperienceSection />
-      <Divider />
+      {/* <Divider /> */}
       <ProjectSection />
       <ContactSection />
       <Footer />
