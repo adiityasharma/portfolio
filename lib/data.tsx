@@ -10,10 +10,10 @@ export const navLinks: NavLink[] = [
     name: "About",
     href: "#about",
   },
-  {
-    name: "Experience",
-    href: "#experience",
-  },
+  // {
+  //   name: "Experience",
+  //   href: "#experience",
+  // },
   {
     name: "Projects",
     href: "#projects",
@@ -26,7 +26,7 @@ export const navLinks: NavLink[] = [
 
 export const projectsData: Project[] = [
   {
-    video: "assets/videos/chat-collector-demo.mp4",
+    video: "",
     title: "Chat Collector Pro",
     description:
       "A comprehensive chat collector application built with React and Node.js, featuring real-time collaboration, project tracking, and team management capabilities.",
@@ -44,7 +44,7 @@ export const projectsData: Project[] = [
     },
   },
   {
-    video: "assets/videos/magic-bento-demo.mp4",
+    video: "",
     title: "Magic Bento Box",
     description:
       "Magic Bento Box is a platform for creating and sharing magic recipes that can be used in the game.",

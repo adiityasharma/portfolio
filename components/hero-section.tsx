@@ -6,12 +6,16 @@ import Link from "next/link";
 import { siteConfig } from "@/lib/site-config";
 import { Button } from "./ui/button";
 import { Icons } from "./icons";
+import { useSectionInView } from "@/hooks/use-section-in-view";
 
 const HeroSection = () => {
+  const {ref} = useSectionInView("Home");
+
   return (
     <section
+      ref={ref}
       id="home"
-      className="relative my-10 mb-60 flex scroll-mt-96 flex-col items-center gap-5 text-center sm:mt-28"
+      className="relative my-28 flex scroll-mt-96 flex-col items-center gap-5 text-center"
     >
       <GridPattern
         width={80}

@@ -36,34 +36,6 @@ const Header = () => {
     );
   };
 
-  const DesktopNavItems = (data: NavLink) => {
-    return (
-      <li className={`py-2 px-2 rounded-full`}>
-        <Link
-          onClick={() => {
-            setActiveSection(data.name);
-            setTimeOfLastClick(Date.now());
-          }}
-          className={`text-neutral-400 relative px-4 py-2 ${activeSection === data.name && "text-white"}`}
-          href={data.href}
-        >
-          {data.name}
-          {data.name === activeSection && (
-            <motion.div
-              layoutId="activeSection"
-              transition={{
-                type: "spring",
-                stiffness: 380,
-                damping: 30,
-              }}
-              className="bg-muted absolute inset-0 -z-10 rounded-full "
-            ></motion.div>
-          )}
-        </Link>
-      </li>
-    );
-  };
-
   return (
     <motion.header
       initial={{
@@ -85,7 +57,7 @@ const Header = () => {
             <Button
               variant="outline"
               size="lg"
-              className="bg-background/80 backdrop:blur-sm border-neutral-700 cursor-pointer"
+              className="bg-background/10  backdrop-blur-sm dark:border-neutral-700 "
             >
               Menu <Icons.chevronDown className="ml-2 size-4" />
             </Button>
@@ -107,7 +79,7 @@ const Header = () => {
           </DialogContent>
         </Dialog>
 
-        <ThemeToggle className="bg-background/80 backdrop-blur-sm size-10 " />
+        <ThemeToggle className="bg-background/10 backdrop-blur-sm size-10  " />
       </div>
 
       {/* desktop menu */}
@@ -115,7 +87,29 @@ const Header = () => {
       <nav className=" hidden sm:block  backdrop-blur-2xl border rounded-full p-2">
         <ul className="flex justify-between items-center">
           {navLinks.map((i) => (
-            <DesktopNavItems key={i.name} {...i} />
+            <li key={i.name} className={`py-2 px-2 rounded-full`}>
+              <Link
+                onClick={() => {
+                  setActiveSection(i.name);
+                  setTimeOfLastClick(Date.now());
+                }}
+                className={`text-neutral-400 relative px-4 py-2 ${activeSection === i.name && "text-white"}`}
+                href={i.href}
+              >
+                {i.name}
+                {i.name === activeSection && (
+                  <motion.div
+                    layoutId="activeSection"
+                    transition={{
+                      type: "spring",
+                      stiffness: 380,
+                      damping: 30,
+                    }}
+                    className="bg-muted absolute inset-0 -z-10 rounded-full "
+                  ></motion.div>
+                )}
+              </Link>
+            </li>
           ))}
         </ul>
       </nav>

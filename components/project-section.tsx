@@ -5,6 +5,7 @@ import SectionHeading from "./section-heading";
 import { projectsData } from "@/lib/data";
 import { Project } from "../lib/types";
 import Link from "next/link";
+import { useSectionInView } from "@/hooks/use-section-in-view";
 
 type ProjectCardProps = Project & {
   index: number;
@@ -25,6 +26,8 @@ const fadeInAnimationVariants = {
 };
 
 const ProjectSection = () => {
+  const { ref } = useSectionInView("Projects");
+  
   const ProjectCard = (data: ProjectCardProps) => {
     return (
       <motion.div
@@ -43,14 +46,14 @@ const ProjectSection = () => {
           aria-label={data.title}
           className="overflow-hidden rounded"
         >
-          <video
+          {/* <video
             src={data?.video}
             autoPlay
             muted
             loop
             playsInline
             className="pointer-events-none mx-auto object-cover h-40 w-full object-top"
-          />
+          /> */}
         </Link>
         <h3 className="mt-4 text-xl font-medium ">{data.title}</h3>
         <p className="text-muted-foreground mb-4 mt-1">{data.description}</p>

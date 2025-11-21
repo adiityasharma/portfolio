@@ -18,7 +18,7 @@ const fadeInAnimationVariants = {
 
 const Skills = () => {
   return (
-    <div className="mt-10 flex w-full flex-wrap justify-between gap-7 px-5 sm:justify-center sm:px-0 md:mt-14 lg:justify-center">
+    <div className="mt-10 flex w-full flex-wrap justify-between gap-2 md:gap-7 px-5 sm:justify-center sm:px-0 md:mt-14 lg:justify-center">
       {skillsData.map(({ icon, name }, index) => (
         <motion.div
           key={name}
@@ -26,7 +26,7 @@ const Skills = () => {
           initial="initial"
           whileInView="animate"
           viewport={{
-            // once: true,
+            once: true,
           }}
           custom={index}
         >

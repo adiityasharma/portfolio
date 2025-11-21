@@ -14,7 +14,7 @@ const ThemeToggle = ({ className }: ThemeToggleProps) => {
 
   return (
     <Button
-      className={cn("border-neutral-700", className)}
+      className={cn("dark:border-neutral-700", className)}
       variant="outline"
       size="icon"
       aria-label="theme toggle"

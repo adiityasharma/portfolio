@@ -15,8 +15,10 @@ import { cn } from "@/lib/utils";
 import { Input } from "./ui/input";
 import { Textarea } from "./ui/textarea";
 import { Icons } from "./icons";
+import { useSectionInView } from "@/hooks/use-section-in-view";
 
 const ContactSection = () => {
+  const { ref } = useSectionInView("Contact");
   const {
     register,
     handleSubmit,
@@ -94,6 +96,7 @@ const ContactSection = () => {
 
   return (
     <motion.section
+      ref={ref}
       id="contact"
       className="my-10 w-full scroll-mt-28 md:mb-20"
       initial={{

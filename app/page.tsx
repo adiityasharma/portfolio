@@ -9,12 +9,12 @@ import ProjectSection from "@/components/project-section";
 
 export default function Home() {
   return (
-    <div className="max-w-3xl mx-auto flex flex-col items-center min h-screen">
+    <div className="max-w-3xl mx-auto flex flex-col items-center min-h-screen p-4 md:p-0">
       <Header />
       <HeroSection />
       <AboutSection />
-      <Divider />
-      <ExperienceSection />
+      {/* <Divider /> */}
+      {/* <ExperienceSection /> */}
       {/* <Divider /> */}
       <ProjectSection />
       <ContactSection />

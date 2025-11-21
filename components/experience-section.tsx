@@ -6,8 +6,11 @@ import { Experience } from "@/lib/types";
 import { experiencesData } from "@/lib/data";
 import { cn } from "@/lib/utils";
 import { Icons } from "./icons";
+import { useSectionInView } from "@/hooks/use-section-in-view";
 
 const ExperienceSection = () => {
+  const { ref } = useSectionInView("Experience");
+
   const ExperienceCard = (data: Experience) => {
     return (
       <div className="not-last:pb-12 relative pl-8 ">
@@ -52,7 +55,11 @@ const ExperienceSection = () => {
   };
 
   return (
-    <motion.section id="experience" className="my-10 scroll-mt-28 md:mb-20">
+    <motion.section
+      ref={ref}
+      id="experience"
+      className="my-10 scroll-mt-28 md:mb-20"
+    >
       <SectionHeading
         heading="My Experience"
         content="Professional experience that I have accumulated over several years."
