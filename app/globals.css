@@ -5,6 +5,7 @@
 
 .light {
   background-color: white;
+  color: black;
 }
 
 @theme inline {

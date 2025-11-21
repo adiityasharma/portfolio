@@ -1,3 +1,4 @@
+"use client";
 import { useTheme } from "next-themes";
 import React from "react";
 import { Button } from "./ui/button";
@@ -20,9 +21,9 @@ const ThemeToggle = ({ className }: ThemeToggleProps) => {
       onClick={() => setTheme(theme === "light" ? "dark" : "light")}
     >
       {theme === "light" ? (
-        <Icons.moon className="size-4 dark:block" />
+        <Icons.moon className="size-4 " />
       ) : (
-        <Icons.sun className="size-4 dark:hidden" />
+        <Icons.sun className="size-4 " />
       )}
     </Button>
   );
