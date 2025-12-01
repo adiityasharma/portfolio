@@ -78,7 +78,7 @@ const ContactSection = () => {
           <Textarea
             id="message"
             placeholder="Hello! What's up?"
-            {...register("email")}
+            {...register("message")}
             className={cn(errors.message?.message && "border-destructive")}
           />
           {errors.message?.message && (

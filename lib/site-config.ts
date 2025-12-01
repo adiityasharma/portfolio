@@ -29,16 +29,15 @@ export const siteConfig = {
   creator: "Aditya Sharma",
   url: "#",
   contact: {
-    email: "john@doe.com",
-    linkedin: "#",
-    github: "#",
+    email: "adityasharma626367@gmail.com",
+    linkedin: "https://www.linkedin.com/in/adiityasharma",
+    github: "https://github.com/adiityasharma",
   },
   links: {
     contactForm: "/#contact",
-    linkedin: "#",
-    github: "#",
-    mailTo: "mailto:john@doe.com",
+    linkedin: "https://www.linkedin.com/in/adiityasharma",
+    github: "https://github.com/adiityasharma",
+    mailTo: "mailto:adityasharma626367@gmail.com",
     cvPdf: "/john-doe-cv.pdf",
-    sohailYoutube: "",
   },
 };

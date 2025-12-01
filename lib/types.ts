@@ -3,7 +3,7 @@ import { navLinks } from "@/lib/data";
 export type SectionName = (typeof navLinks)[number]["name"];
 
 export type Project = {
-  video: string;
+  image: string;
   title: string;
   description: string;
   technologies: string[];

@@ -26,38 +26,64 @@ export const navLinks: NavLink[] = [
 
 export const projectsData: Project[] = [
   {
-    video: "",
-    title: "Chat Collector Pro",
+    image: "/elitecv.png",
+    title: "Elite CV - Resume Builder",
     description:
-      "A comprehensive chat collector application built with React and Node.js, featuring real-time collaboration, project tracking, and team management capabilities.",
+      "A React-based resume builder website that allows users to create, customize, and download professional resumes quickly and easily.",
     technologies: [
       "React.js",
-      "Node.js",
-      "MongoDB",
-      "Socket.io",
-      "Material-UI",
+      "JavaScript",
+      "Tailwind",
+      "React Router",
+      "Framer Motion",
+      "Redux Toolkit",
     ],
     links: {
-      preview: "#",
-      github: "#",
+      preview: "https://elite-cv-psi.vercel.app/",
+      github:
+        "https://github.com/adiityasharma/elite.cv-resume-builder/tree/main/frontend",
       githubApi: "#",
     },
   },
   {
-    video: "",
-    title: "Magic Bento Box",
+    image: "/ecomm.png",
+    title: "E-comm",
     description:
-      "Magic Bento Box is a platform for creating and sharing magic recipes that can be used in the game.",
+      "A modern, responsive E-Commerce Frontend built with React. It provides users with a smooth shopping experience with features like product listing, search, cart management, and authentication.",
     technologies: [
-      "Next.js",
-      "TypeScript",
-      "Express.js",
-      "PostgreSQL",
-      "Stripe",
+      "React.js",
+      "JavaScript",
+      "Tailwind",
+      "React Router",
+      "Redux Toolkit",
     ],
     links: {
-      preview: "#",
-      github: "#",
+      preview: "https://e-comm-mu-green.vercel.app/",
+      github: "https://github.com/adiityasharma/e-comm",
+      githubApi: "#",
+    },
+  },
+  {
+    image: "/giphy.png",
+    title: "GIPHY",
+    description:
+      "A React + Tailwind-built replica of the popular Giphy.com interface, using the official Giphy API. This project was created for learning and refining frontend development skills.",
+    technologies: ["React.js", "JavaScript", "Tailwind", "React Router"],
+    links: {
+      preview: "https://giphy-clone-bice-xi.vercel.app/",
+      github: "https://github.com/adiityasharma/GIPHY-Clone",
+      githubApi: "#",
+    },
+  },
+  {
+    image: "/streamerzz.png",
+    title: "Streamerzz",
+    description:
+      "Optimize your streams, track real-time analytics, and engage your audience effortlessly—all in one place. Perfect for Twitch, YouTube, and Facebook streamers.",
+    technologies: ["React.js", "JavaScript", "Tailwind", "Framer Motion"],
+    links: {
+      preview: "https://streamerzz-five.vercel.app/",
+      github: "https://github.com/adiityasharma/Streamerzz",
       githubApi: "#",
     },
   },
@@ -83,12 +109,13 @@ export const experiencesData: Experience[] = [
 ];
 
 export const skillsData: Skill[] = [
-  // { name: "Sass", icon: <Icons.sass className="size-12" /> },
+  { name: "Sass", icon: <Icons.sass className="size-12" /> },
   { name: "Tailwind", icon: <Icons.tailwind className="size-12" /> },
   { name: "JavaScript", icon: <Icons.javascript className="size-12" /> },
   { name: "TypeScript", icon: <Icons.typescript className="size-12" /> },
   { name: "React", icon: <Icons.react className="size-12" /> },
   { name: "NextJS", icon: <Icons.nextjs className="size-12" /> },
+  // { name: "NextJS", icon: <Icons.nextjs className="size-12" /> },
   // { name: "NestJS", icon: <Icons.nestjs className="size-12" /> },
   // { name: "Prisma", icon: <Icons.prisma className="size-12" /> },
   // { name: "Docker", icon: <Icons.docker className="size-12" /> },
