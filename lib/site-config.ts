@@ -38,6 +38,6 @@ export const siteConfig = {
     linkedin: "https://www.linkedin.com/in/adiityasharma",
     github: "https://github.com/adiityasharma",
     mailTo: "mailto:adityasharma626367@gmail.com",
-    cvPdf: "/john-doe-cv.pdf",
+    cvPdf: "/Aditya_Sharma_Resume.pdf",
   },
 };
