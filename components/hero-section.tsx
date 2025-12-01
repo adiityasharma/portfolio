@@ -9,7 +9,7 @@ import { Icons } from "./icons";
 import { useSectionInView } from "@/hooks/use-section-in-view";
 
 const HeroSection = () => {
-  const {ref} = useSectionInView("Home");
+  const { ref } = useSectionInView("Home");
 
   return (
     <section
@@ -83,37 +83,41 @@ const HeroSection = () => {
         initial={{ opacity: 0, y: 100 }}
         animate={{ opacity: 1, y: 0 }}
         transition={{ delay: 0.2 }}
-        className="flex flex-row gap-2"
+        className="flex flex-col items-center sm:flex-row gap-2"
       >
-        <Button asChild size="lg">
-          <Link href={siteConfig.links.contactForm}>
-            Get in touch <Icons.arrowRight className="ml-2 size-4" />
-          </Link>
-        </Button>
-        <Button asChild variant="outline" size="lg" className="hidden sm:flex ">
-          <a href={siteConfig.links.cvPdf} download>
-            {" "}
-            Download CV <Icons.download className="ml-2 size-4" />{" "}
-          </a>
-        </Button>
-        <Button asChild variant="outline" size="icon">
-          <Link
-            href={siteConfig.links.linkedin}
-            aria-label="linkedin"
-            target="_blank"
-          >
-            <Icons.linkedin className="size-5" />
-          </Link>
-        </Button>
-        <Button asChild variant="outline" size="icon">
-          <Link
-            href={siteConfig.links.github}
-            aria-label="github"
-            target="_blank"
-          >
-            <Icons.github className="size-5" />
-          </Link>
-        </Button>
+        <div className="flex gap-2">
+          <Button asChild size="lg">
+            <Link href={siteConfig.links.contactForm}>
+              Get in touch <Icons.arrowRight className="ml-2 size-4" />
+            </Link>
+          </Button>
+          <Button asChild variant="outline" size="lg" className="">
+            <a href={siteConfig.links.cvPdf} download>
+              {" "}
+              Download CV <Icons.download className="ml-2 size-4" />{" "}
+            </a>
+          </Button>
+        </div>
+        <div className="flex gap-2">
+          <Button asChild variant="outline" size="icon">
+            <Link
+              href={siteConfig.links.linkedin}
+              aria-label="linkedin"
+              target="_blank"
+            >
+              <Icons.linkedin className="size-5" />
+            </Link>
+          </Button>
+          <Button asChild variant="outline" size="icon">
+            <Link
+              href={siteConfig.links.github}
+              aria-label="github"
+              target="_blank"
+            >
+              <Icons.github className="size-5" />
+            </Link>
+          </Button>
+        </div>
       </motion.div>
     </section>
   );
