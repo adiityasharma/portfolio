@@ -54,30 +54,38 @@ const HeroSection = () => {
             <span className="absolute flex size-full animate-ping rounded-full bg-green-400 opacity-75"></span>
             <span className="relative flex size-2 rounded-full bg-green-400 "></span>
           </span>
-          <span className="text-sm ">Available for work!</span>
+          <span
+            className="text-sm bg-gradient-to-b from-[#16a34a] via-[#4ade80] to-[#bbf7d0] bg-clip-text text-transparent"
+          >
+            Available for work!
+          </span>
         </Link>
       </motion.div>
 
       <motion.h1
         initial={{ opacity: 0, y: 100 }}
         animate={{ opacity: 1, y: 0 }}
-        className="font-heading max-w-3xl text-4xl font-extrabold md:text-5xl"
+        className="font-heading max-w-3xl text-4xl font-extrabold md:text-5xl "
       >
-        I'm a{" "}
-        <span className="bg-linear-to-r from-rose-700 to-pink-600 bg-clip-text text-transparent ">
+        I'm Aditya Sharma a{" "}
+        <span
+          className="bg-linear-to-bl from-red-900
+via-orange-400
+to-violet-100 bg-clip-text text-transparent "
+        >
           Creative Frontend
         </span>{" "}
         developer carfting modern digital experiences.
       </motion.h1>
 
-      <motion.p
+      {/* <motion.p
         initial={{ opacity: 0, y: 100 }}
         animate={{ opacity: 1, y: 0 }}
         transition={{ delay: 0.1 }}
         className="text-muted-foreground max-w-xl"
       >
         You have Project in mind? Let's talk about it!
-      </motion.p>
+      </motion.p> */}
 
       <motion.div
         initial={{ opacity: 0, y: 100 }}

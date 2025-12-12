@@ -92,7 +92,7 @@ const ProjectSection = () => {
       >
         <SectionHeading
           heading="Projects"
-          content="Projects I worked on. Each of them containing it's own case study"
+          content="Projects I worked on."
         />
       </motion.div>
 
